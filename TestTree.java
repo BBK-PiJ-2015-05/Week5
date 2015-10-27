@@ -10,12 +10,20 @@ public class TestTree{
 		IntegerTreeNode myTree = new IntegerTreeNode(5);
 		myTree.add(1);
 		myTree.add(8);
+		System.out.println(myTree.toStringSimple());
 		myTree.add(10);
-		myTree.add(2);
 		myTree.add(9);
+		myTree.add(0);
+		myTree.add(2);
 		myTree.add(3);
-		System.out.println(myTree.contains(0));
-		System.out.println(myTree.getMax());
-		System.out.println(myTree.getMin());
+		System.out.println(myTree);
+		System.out.println("contains 10? " + myTree.contains(1));
+		System.out.println("Max = " + myTree.getMax());
+		System.out.println("Min = " + myTree.getMin());
+		System.out.println("Depth = " + myTree.depth()); 
+		myTree.remove(8);
+		System.out.println("Remove 1");
+		System.out.println(myTree);
+		System.out.println("contains 1? " + myTree.contains(1));
 	}
 }
