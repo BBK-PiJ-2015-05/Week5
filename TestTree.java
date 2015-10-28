@@ -13,6 +13,8 @@ public class TestTree{
 		System.out.println(myTree.toStringSimple());
 		myTree.add(10);
 		myTree.add(9);
+		myTree.add(10);
+		myTree.add(9);
 		myTree.add(0);
 		myTree.add(2);
 		myTree.add(3);
@@ -21,7 +23,7 @@ public class TestTree{
 		System.out.println("Max = " + myTree.getMax());
 		System.out.println("Min = " + myTree.getMin());
 		System.out.println("Depth = " + myTree.depth()); 
-		myTree.remove(8);
+		myTree.remove(5);
 		System.out.println("Remove 1");
 		System.out.println(myTree);
 		System.out.println("contains 1? " + myTree.contains(1));
