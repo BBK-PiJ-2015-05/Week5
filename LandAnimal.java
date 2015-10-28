@@ -5,7 +5,7 @@
 * 
 */
 
-public interface LandAnimal{
+public class LandAnimal{
 
 	public void call(){
 		System.out.println(this.getClass().getName() + " coming...");

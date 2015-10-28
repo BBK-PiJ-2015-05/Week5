@@ -9,13 +9,16 @@ public class Bear extends LandAnimal implements Animal, Mammal{
 
 	
 	public void reproduce(){
-		System.out.println("A baby bear was born");
+		giveBirth();
 	}
 	
 	public void makeSound(){
 		System.out.println("Grrrr");
 	}
 	
+	public void giveBirth(){
+		System.out.println("A baby bear was born");
+	}
 	
 	
 }
