@@ -12,9 +12,10 @@ public class PhoneLauncher{
 	}
 	
 	private void launch(){
-		SmartPhone myCell = new SmartPhone();
+		SmartPhone myCell = new SmartPhone("Nokia");
 		myCell.browseWeb("Facebook");
-		System.out.print(myCell.findPosition());
+		System.out.println(myCell.findPosition());
+		System.out.println(myCell.getBrand());
 		myCell.ringAlarm("Program!!");
 		myCell.playGame("Fallout");
 		myCell.call("001");

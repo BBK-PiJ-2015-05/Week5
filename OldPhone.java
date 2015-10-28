@@ -6,7 +6,16 @@
 */
 
 public class OldPhone implements Phone{
-
+	
+	private String brand = null;
+	
+	public OldPhone(String brand) {
+		this.brand = brand;
+	}
+	
+	public String getBrand() {
+		return brand;
+	}
 	
 	/**
 	* @param number Just print on the screen: "Calling number...".

@@ -8,7 +8,9 @@
 
 public class SmartPhone extends MobilePhone{
 
-
+	public SmartPhone(String brand){
+		super(brand);
+	}
 	
 	/**
 	* overrides MobilePhone call method
@@ -36,6 +38,6 @@ public class SmartPhone extends MobilePhone{
 	* @return an arbitrary GPS position
 	*/
 	public String findPosition(){
-		return "40.7127837, -74.00594130000002\n";
+		return "40.7127837, -74.00594130000002";
 	}
 }

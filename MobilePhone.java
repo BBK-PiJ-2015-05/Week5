@@ -11,11 +11,11 @@ public class MobilePhone extends OldPhone{
 	private int numCalls;
 	
 	/**
-	* constructor
+	* @param brand constructor
 	* creates an array of Strings to store the last 10 calls made
 	*/
-	public MobilePhone(){
-		
+	public MobilePhone(String brand){
+		super(brand);
 		phoneNums = new String[10];
 		for(int i = 0; i < 10; i++){
 			phoneNums[i] = null;
@@ -53,7 +53,7 @@ public class MobilePhone extends OldPhone{
 	*@param game
 	* prints "Starting the game: "
 	*/
-	public void playGame(String game){
+	protected void playGame(String game){
 		System.out.printf("Starting the game: %s...\n", game);
 	}
 	
